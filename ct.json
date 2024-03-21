@@ -186,6 +186,28 @@
 	  "ext":"./227/xcys.json",
 	  "jar": "./227/sglt.jar"
 	  },
+	  {
+            "key": " 网飞猫 ",
+            "name": "拾光┃网飞猫",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": {
+            "首页": "120",
+            "起始页": "1",
+                "分类url": "https://www.ncat3.com:51111/show/{cateId}-{class}-{area}--{year}-{by}-{catePg}.html;;rc",
+                "分类": "电影&连续剧&动漫&综艺纪录&短剧",
+                "分类值": "1&2&3&4&6",
+                "数组": "<div class=\"module-item&&</a>",
+                "图片": "https://vres.vukfnqr.com+data-original=\"&&\"",
+                "标题": "alt=\"&&\"",
+                "副标题": "item-bottom\"> <span>&&</span>",
+                "链接": "href=\"&&\""
+            },
+            "jar": "./227/Yoursmile.jar"
+        },
 
 {"key":"新视觉","name":"拾光┃新视觉","type":3,"api":"csp_Web608","searchable":1,"quickSearch":0,"filterable":0,"ext":"https://www.80yy3.com"},
 {

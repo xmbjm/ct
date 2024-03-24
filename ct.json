@@ -3,10 +3,9 @@
   "wallpaper": "http://饭太硬.top/深色壁纸/api.php",
   "lives": [
     {
-       "name": "live",
+      "name": "IPv4",
       "type": 0,
       "url": "响应政府号召, 加强行业自律,不提供直播服务。",
-      "playerType": 1,
       "ua": "okhttp/3.12.13",
       "epg": "http://epg.112114.xyz/?ch={name}&date={date}",
       "logo": "https://epg.112114.xyz/logo/{name}.png"
@@ -22,6 +21,17 @@
       "quickSearch": 0,
       "filterable": 0
     },
+{
+            "key": "阿里云集合",
+            "name": "拾光┃阿里集合",
+            "type": 3,
+            "api": "csp_阿里云集合",
+            "searchable": 1,
+            "filterable": 0,
+            "switchable": 0,
+            "ext": "./lib/阿里集合.json;./lib/token.txt",
+            "jar": "./227/真心真语0204.jar"
+        },
     {
       "key":"py_cctv_集合",
       "name":"拾光┃央视",
@@ -689,6 +699,67 @@
         "搜索数组": "<li class=\"active clearfix&&</li"
       }
     },
+   {"key":"熊猫影视","name":"拾光┃熊猫","type":3,"api":"csp_XBPQ","jar":"./227/HeChengChaXiu.jar","ext":{"分类url":"https://www.xiongmaoysa.com/s/{cateId}/area/{area}/class/{class}/page/{catePg}/year/{year}.html","分类":"电影$dianying#电视剧$lianxuju#综艺$zongyi#动漫$dongman"}},
+
+{
+            "key": "苹果",
+            "name": "拾光┃小苹果",
+            "type": 3,
+            "api": "csp_LiteApple",
+            "playerType": 1,
+            "searchable": 1,
+            "quickSearch": 1,
+            "changeable": 1,
+            "jar": "./227/fan.jar"
+        },
+{
+            "key": "C影视",
+            "name": "拾光┃CC观影",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": {
+                "简介": "<p class=\"col-pd\">&&</p>",
+                "跳转播放链接": "var player_*\"url\":\"&&\"",
+                "分类url": "https://www.c-tv6.cc/video/{cateId}/area/{area}/by/{by}/class/{class}/page/{catePg}/year/{year}/",
+                "分类": "电影&连续剧&综艺&动漫&爽文短剧&伦理片",
+                "分类值": "dianying&lianxuju&zongyi&dongman&shuangwenduanju&lunlipian"
+            },
+            "jar": "./227/Yoursmile.jar"
+        },
+{
+            "key": " 星空影院 ",
+            "name": "拾光┃星空",
+            "type": 3,
+            "api": "csp_XBPQ",
+            "jar": "./227/XBPQ.jar",
+            "searchable": 1,
+            "quickSearch": 1,
+            "filterable": 1,
+            "ext": {
+                "请求头": "手机",
+                "数组": "",
+                "图片": "data-original=\"&&\"",
+                "标题": "title=\"&&\"",
+                "链接": "href=\"&&\"",
+                "线路数组": "<h3 class=\"title\">&&</h3>[排序:播放线路3>播放线路2>播放线路4>播放线路5>播放线路6>播放线路1>]",
+                "线路标题": "✨专享接口✨+>播放线路</h3>",
+                "播放数组": "ul class=\"stui-content__playlist clearfix\">&&</ul>",
+                "跳转播放链接": "Base64(var player_*\"url\":\"&&\")",
+                "分类url": "http://www.xuym.cn/vrgfdsr/{cateId}-{area}--{class}-{lang}----{catePg}---{year}.html[http://www.xuym.cn/xkyh/{cateId}.html]",
+                "分类": "电影&连续剧&综艺&动漫&悬疑&犯罪&纪录&惊悚&动作&喜剧&爱情&科幻&恐怖&剧情&战争&国产剧&港台剧&日韩剧&海外剧&欧美剧",
+                "分类值": "1&2&3&4&25&23&24&30&6&7&8&9&10&11&12&13&20&21&22&16"
+            }        },
+{
+            "key": "555yingshi","name":"拾光┃555","type":3,"api":"csp_XBPQ","jar": "./227/XBPQ.jar",
+            "ext": {"分类":"电影$1#电视剧$2#福利$124#动漫$4","分类url":"https://5moov.vip/vodshow/{cateId}--------{catePg}---.html"}
+        },
+
+{ "key": "csp_桵空影院","name": "拾光┃桵空","type": 3,"api": "csp_XBPQ","jar": "./227/XBPQ.jar","ext": {"分类url": "https://www.maigo.cc/vodshow/{cateId}---{class}-----{catePg}---{year}/","分类": "电影$84#综艺$91#大陆剧$81#港台剧$82#海外剧$83#纪录片$88#动漫$1#日剧$32#日漫$46#国漫$47#美漫$85"}},
+
+{"key":"csp_lwdy","name":"拾光┃老王","type":3,"api":"csp_XBPQ","ext":{"分类url":"https://www.laowang.co/vodshow/{cateId}-{area}-{by}-{class}-{lang}----{catePg}---{year}.html","分类":"电影$movie#电视剧$tv#综艺$tvshow#动漫$animation#短剧$duanju"},"jar":"./227/XBPQ.jar"},
 
     {
       "key": "csp_XPath_企鹅体育",
@@ -1002,6 +1073,11 @@
     }
   ],
   "parses": [
+{
+            "name": "超级嗅探",
+            "type": 3,
+            "url": "Web"
+        },
     {
       "name": "光",
       "type": 1,
@@ -1039,15 +1115,101 @@
         },
 
         {
-            "name": "顶配1",
+            "name": "春天下",
             "type": 0,
-            "url": "https://t1.qlplayer.cyou/player/analysis.php?v="
+            "url": "https://api.tyun77.cn/api.php/provide/parseDicturl?url="
         },
-        {
-            "name": "顶配2",
+{
+			"name": "春爱酷🌾",
+			"type": 1,
+			"url": "http://42.157.129.139:7788/json/aiku.php?url=",
+			"ext": {
+				"flag": [
+					"seven",
+					"mgtv",
+					"qiyi",
+					"imgo",
+					"爱奇艺",
+					"奇艺",
+					"qq",
+					"腾讯",
+					"youku",
+					"优酷",
+					"pptv",
+					"PPTV",
+					"letv",
+					"乐视",
+					"leshi",
+					"bilibili",
+					"哔哩哔哩",
+					"哔哩",
+					"mgtv",
+					"芒果",
+					"芒果"
+				],
+				"header": {
+					"User-Agent": "Lavf/58.12.100"
+				}
+			}
+		},
+{
+            "name": "春绣探",
             "type": 0,
-            "url": "https://t1.qlplayer.cyou/player/?url="
+            "url": "https://www.pangujiexi.com/pangu/?url="
         },
+{
+      "name": "黄金",
+      "type": 1,
+      "url": "http://xiutan.shiyifacai.com/json/qingfeng.php?url=",
+      "ext": {
+        "flag": [
+          "seven"
+        ],
+        "header": {
+          "User-Agent": "Lavf/58.12.100"
+        }
+      }
+    },
+{
+      "name": "黄金1",
+      "type": 0,
+      "url": "https://www.yemu.xyz/?url=",
+      "ext": {
+        "flag": [
+          "qq",
+          "腾讯",
+          "qiyi",
+          "iqiyi",
+          "爱奇艺",
+          "奇艺",
+          "youku",
+          "优酷",
+          "mgtv",
+          "芒果",
+          "letv",
+          "乐视",
+          "pptv",
+          "PPTV",
+          "sohu",
+          "bilibili",
+          "哔哩哔哩",
+          "哔哩"
+        ]
+      }
+    },
+    {
+      "name": "黄金2",
+      "type": 0,
+      "url": "https://jx.xmflv.com/?url=",
+      "ext": {
+        "header": {
+          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.57"
+        }
+      }
+    },
+
+{"name":"天下嗅探","type":0,"url":"https://jx.jsonplayer.com/player/?=&url=","ext": {"flag": ["qq","腾讯","qiyi","iqiyi","爱奇艺","奇艺","youku","yk","优
+酷","mgtv","imgo","芒果"]}},
         {
             "name": "KK",
             "type": 0,
